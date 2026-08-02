@@ -1,8 +1,8 @@
-# agentic-rag
+# agentic-rag (tui)
 
 Chat with your data.
 
-An agentic chat tool that runs in your terminal. It has tools it can reason
+An agentic RAG assistant that runs in your terminal. It has tools it can reason
 with, so it will search your documents, run SQL over your numbers, read a file,
 check the web or do the math, whatever the question needs, and answer from what
 it finds instead of guessing.
