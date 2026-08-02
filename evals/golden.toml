@@ -1,0 +1,195 @@
+# Golden set for the sample corpus in docs/.
+#
+# Run with: uv run agentic-rag eval
+#
+# Fields per case:
+#   id              unique name, used by --case
+#   question        what to ask
+#   expect_tools    tools that must be called
+#   forbid_tools    tools that must NOT be called
+#   expect_sources  retrieval passes if any of these documents comes back
+#   expect_contains substrings the answer must contain (commas and case ignored,
+#                   so "12260" matches "$12,260 million")
+#   must_refuse     the corpus has no answer; the agent must say so
+#
+# Facts here are taken from the documents in docs/. If you swap in your own
+# corpus, rewrite these — a golden set is only as good as its ground truth.
+
+# --------------------------------------------------------------------------- #
+# Document retrieval — refund policy
+# --------------------------------------------------------------------------- #
+
+[[case]]
+id = "refund-window"
+question = "How many days do I have to return a Pixel phone bought from the Google Store?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["refund_policy.md"]
+expect_contains = ["15"]
+
+[[case]]
+id = "restocking-fee"
+question = "Is there a restocking fee if I return a damaged device?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["refund_policy.md"]
+expect_contains = ["15%"]
+
+[[case]]
+id = "refund-timing"
+question = "Once my return is inspected, how long until the refund is processed?"
+expect_tools = ["search_document_tool"]
+expect_sources = ["refund_policy.md"]
+expect_contains = ["3 to 5"]
+
+[[case]]
+id = "gift-cards-refundable"
+question = "Can I get a refund on a gift card?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["refund_policy.md"]
+expect_contains = ["not"]
+
+# --------------------------------------------------------------------------- #
+# Document retrieval — handbook and product docs
+# --------------------------------------------------------------------------- #
+
+[[case]]
+id = "headquarters"
+question = "Where is the company headquarters located?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["company_handbook.txt"]
+expect_contains = ["mountain view"]
+
+[[case]]
+id = "hybrid-work"
+question = "Does the company allow employees to work remotely?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["company_handbook.txt"]
+expect_contains = ["hybrid"]
+
+[[case]]
+id = "office-locations"
+question = "Which European cities do we have offices in?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["company_handbook.txt"]
+expect_contains = ["zurich"]
+
+[[case]]
+id = "reporting-segments"
+question = "What are Alphabet's three reporting segments?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["investor_faq.txt", "product_overview.md"]
+expect_contains = ["google services", "google cloud", "other bets"]
+
+[[case]]
+id = "waymo-segment"
+question = "Which segment is Waymo reported under?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["product_overview.md", "investor_faq.txt"]
+expect_contains = ["other bets"]
+
+[[case]]
+id = "revenue-guidance"
+question = "Does Alphabet issue specific quarterly revenue guidance?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["investor_faq.txt"]
+expect_contains = ["not"]
+
+[[case]]
+id = "cloud-offerings"
+question = "What products are included in Google Cloud?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["product_overview.md", "investor_faq.txt"]
+expect_contains = ["workspace"]
+
+# --------------------------------------------------------------------------- #
+# Retrieval from long filings — the answer is deep inside the document, not in
+# its opening lines, which is where naive chunking tends to fail.
+# --------------------------------------------------------------------------- #
+
+[[case]]
+id = "nvidia-q2-revenue"
+question = "What revenue did NVIDIA report for the second quarter?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["nvidia-FY2026 Q2 10-Q.txt"]
+expect_contains = ["46.7"]
+
+[[case]]
+id = "nvidia-data-center"
+question = "How much of NVIDIA's second quarter revenue came from Data Center?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["nvidia-FY2026 Q2 10-Q.txt"]
+expect_contains = ["41.1"]
+
+[[case]]
+id = "nvidia-outlook"
+question = "What is NVIDIA's revenue outlook for the next quarter?"
+expect_tools = ["search_document_tool"]
+forbid_tools = ["web_search_tool"]
+expect_sources = ["nvidia-FY2026 Q2 10-Q.txt"]
+expect_contains = ["54.0"]
+
+# --------------------------------------------------------------------------- #
+# Structured metrics — these must route to SQL, not to document search
+# --------------------------------------------------------------------------- #
+
+[[case]]
+id = "cloud-revenue-q1"
+question = "What was Google Cloud revenue in Q1 of fiscal 2025?"
+expect_tools = ["query_metrics_tool"]
+forbid_tools = ["web_search_tool"]
+expect_contains = ["12260"]
+
+[[case]]
+id = "services-operating-income"
+question = "What was Google Services operating income in Q3 2025?"
+expect_tools = ["query_metrics_tool"]
+forbid_tools = ["web_search_tool"]
+expect_contains = ["38900"]
+
+[[case]]
+id = "other-bets-loss"
+question = "Did Other Bets make or lose money in Q1 2025, and how much?"
+expect_tools = ["query_metrics_tool"]
+forbid_tools = ["web_search_tool"]
+expect_contains = ["1233"]
+
+[[case]]
+id = "cloud-growth-calculation"
+question = "By what percentage did Google Cloud revenue grow from Q1 to Q3 of fiscal 2025?"
+expect_tools = ["query_metrics_tool", "calculator_tool"]
+forbid_tools = ["web_search_tool"]
+expect_contains = ["23"]
+
+# --------------------------------------------------------------------------- #
+# Refusals — the corpus genuinely does not answer these. Confidently answering
+# any of them means the grounding rules have stopped working.
+# --------------------------------------------------------------------------- #
+
+[[case]]
+id = "refuse-parental-leave"
+question = "How many weeks of paid parental leave does the company offer?"
+forbid_tools = ["web_search_tool"]
+must_refuse = true
+
+[[case]]
+id = "refuse-office-headcount"
+question = "How many employees work in the Zurich office?"
+forbid_tools = ["web_search_tool"]
+must_refuse = true
+
+[[case]]
+id = "refuse-q2-cloud-revenue"
+question = "What was Google Cloud revenue in Q2 of fiscal 2025?"
+forbid_tools = ["web_search_tool"]
+must_refuse = true

@@ -1,0 +1,143 @@
+Alphabet Announces Second Quarter 2026 Results
+MOUNTAIN VIEW, Calif. – July 22, 2026 – Alphabet Inc. (NASDAQ: GOOG, GOOGL) today announced financial
+results for the quarter ended June 30, 2026.
+• Consolidated Alphabet revenues increased 24%, or 23% in constant currency, to $119.8 billion, reflecting
+strong performance across the business and our 12th consecutive quarter of double-digit revenue growth.
+• Google Services revenues increased 15% to $94.5 billion, led by 17% growth in Google Search & other,
+15% in Google subscriptions, platforms, and devices, and 13% in YouTube ads.
+• Google Cloud saw a meaningful acceleration in growth as revenues increased 82% to $24.8 billion, led by
+an increase in Google Cloud Platform (GCP) across enterprise AI Solutions and enterprise AI Infrastructure,
+as well as core GCP services.
+• Consolidated Alphabet operating income increased 30% and operating margin expanded by 2 percentage
+points to 34%.
+• Other income reflected a net gain of $98.0 billion, primarily the result of net unrealized gains on our equity
+securities.
+• Net income available to common stockholders increased 298% and EPS increased 294% to $9.11.
+Sundar Pichai, CEO of Google and Alphabet, said: “Our AI investments are redefining what’s possible across every
+part of our business.
+Q2 was an amazing quarter, with Alphabet revenues growing 24% year-over-year and Google Cloud revenues
+accelerating to 82% growth, driven by demand for AI infrastructure and AI solutions. It’s great to see wide adoption
+of Gemini Enterprise, with nearly 90% of the Fortune 100 using it.
+We have exciting momentum across the board. Our popular AI features are driving Search query growth. Gemini
+models now process 22 billion API tokens per minute and the Gemini App has 950 million monthly active users. We
+are seeing strong demand for our security solutions, and our new Gemini 3.5 Flash Cyber delivers highly costefficient performance at the frontier. And month over month, people turn to YouTube for major world events, with
+over 1.7 billion unique viewers watching World Cup-related videos during the FIFA World Cup 2026TM.
+These outstanding results show that our differentiated, full stack approach to AI is delivering real, measurable value
+for consumers, customers, and our partners globally.”
+Q2 2026 Financial Highlights (unaudited)
+The following table summarizes our consolidated financial results for the quarters ended June 30, 2025 and 2026
+(in millions, except for per share information and percentages).
+Quarter Ended June 30,
+2025 2026
+Revenues $ 96,428 $ 119,796
+Change in revenues year over year 14 % 24 %
+Change in constant currency revenues year over year(1) 13 % 23 %
+Operating income $ 31,271 $ 40,770
+Operating margin 32 % 34 %
+Other income (expense), net $ 2,662 $ 97,983
+Net income available to common stockholders $ 28,196 $ 112,107
+Diluted net income per common share $ 2.31 $ 9.11
+(1) Non-GAAP measure. See the section captioned “Reconciliation from GAAP Revenues to Non-GAAP Constant Currency
+Revenues and GAAP Percentage Change in Revenues to Non-GAAP Percentage Change in Constant Currency
+Revenues” for more details.
+Q2 2026 Supplemental Information (in millions, except for number of employees; unaudited)
+Revenues, Traffic Acquisition Costs (TAC), and Number of Employees
+Quarter Ended June 30,
+2025 2026
+Google Search & other $ 54,190 $ 63,271
+YouTube ads 9,796 11,055
+Google Network 7,354 7,303
+Google advertising 71,340 81,629
+Google subscriptions, platforms, and devices 11,203 12,911
+Google Services total 82,543 94,540
+Google Cloud 13,624 24,768
+Other Bets 373 382
+Hedging gains (losses) (112) 106
+Total revenues $ 96,428 $ 119,796
+Total TAC $ 14,705 $ 16,179
+Number of employees 187,103 198,933
+Segment Operating Results
+Quarter Ended June 30,
+2025 2026
+Operating income (loss):
+Google Services $ 33,063 $ 39,544
+Google Cloud 2,826 8,814
+Other Bets (1,246) (1,799)
+Alphabet-level activities(1) (3,372) (5,789)
+Total income from operations $ 31,271 $ 40,770
+(1) Alphabet-level activities primarily reflect expenses related to our shared AI research and development.
+Additional Information Relating to the Quarter Ended June 30, 2026 (unaudited)
+Equity Capital Raise
+In June 2026, we issued a combination of Class A stock and Class C stock and mandatory convertible preferred
+stock for aggregate net proceeds of $49.6 billion, to be used for general corporate purposes, including capital
+expenditures to scale AI infrastructure and global compute. Additionally, we entered into an equity distribution
+agreement with certain sales agents to sell up to $40.0 billion of our Class A stock and Class C stock from time to
+time through an At-the-Market Program (ATM Program). The proceeds of the ATM Program are primarily intended to
+be used to meet tax obligations associated with employee equity grants. As of June 30, 2026, we have not sold any
+shares under the ATM Program.
+Issuance of Senior Unsecured Notes
+In the second quarter of 2026, we issued senior unsecured notes for net proceeds of $20.3 billion, to be used for
+general corporate purposes.
+
+Preferred and Common Dividend Programs
+In July 2026, the company's Board of Directors declared a quarterly cash dividend of $12.15 per share on each of
+our Series A and Series B mandatory convertible preferred stock (equivalent to approximately $0.60 per each of our
+Series A and Series B Depositary Shares) and a quarterly cash dividend of $0.22 per share on our Class A, Class B,
+and Class C stock. The mandatory convertible preferred stock dividend is payable on August 15, 2026 to
+stockholders of record for each of the company's Series A and Series B shares as of August 1, 2026, and the
+common stock dividend is payable on September 14, 2026 to stockholders of record for each of the company's
+Class A, Class B, and Class C shares as of September 7, 2026.
+Webcast and Conference Call Information
+A live audio webcast of our second quarter 2026 earnings release call will be available on YouTube at https://
+www.youtube.com/watch?v=LzExSq9DU9w. The call begins today at 1:30 PM (PT) / 4:30 PM (ET). This press
+release, including the reconciliations of certain non-GAAP measures to their nearest comparable GAAP measures, is
+also available at http://abc.xyz/investor.
+We also provide announcements regarding our financial performance, including SEC filings, investor events, press and
+earnings releases, and blogs, on our investor relations website (http://abc.xyz/investor).
+We also share Google news and product updates on Google's Keyword blog at https://www.blog.google/ and News
+From Google page on X at x.com/NewsFromGoogle, and our executive officers may also use certain social media
+channels, such as X and LinkedIn, to communicate information about earnings results and company updates, which
+may be of interest or material to our investors.
+Forward-Looking Statements
+This press release may contain forward-looking statements that involve risks and uncertainties. Actual results may
+differ materially from the results predicted, and reported results should not be considered as an indication of future
+performance. The potential risks and uncertainties that could cause actual results to differ from the results predicted
+include, among others, those risks and uncertainties included under the captions “Risk Factors” and “Management’s
+Discussion and Analysis of Financial Condition and Results of Operations” in our Annual Report on Form 10-K for the
+year ended December 31, 2025 and our most recent Quarterly Report on Form 10-Q for the quarter ended March 31,
+2026, which are on file with the SEC and are available on our investor relations website at http://abc.xyz/investor and
+on the SEC website at www.sec.gov. Additional information will also be set forth in our Quarterly Report on Form 10-Q
+for the quarter ended June 30, 2026, and may be set forth in other reports and filings we make with the SEC. All
+information provided in this release and in the attachments is as of July 22, 2026. Undue reliance should not be placed
+on the forward-looking statements in this press release, which are based on information available to us on the date
+hereof. We undertake no duty to update this information unless required by law.
+About Non-GAAP Financial Measures
+To supplement our consolidated financial statements, which are prepared and presented in accordance with GAAP, we
+use the following non-GAAP financial measures: free cash flow; constant currency revenues; and percentage change
+in constant currency revenues. The presentation of this financial information is not intended to be considered in
+isolation or as a substitute for, or superior to, the financial information prepared and presented in accordance with
+GAAP.
+We use these non-GAAP financial measures for financial and operational decision-making and as a means to evaluate
+period-to-period comparisons. We believe that these non-GAAP financial measures provide meaningful supplemental
+information regarding our performance and liquidity by excluding certain items that may not be indicative of our
+recurring core business operating results, such as our revenues excluding the effect of foreign exchange rate
+movements and hedging activities, which are recognized at the consolidated level. We believe that both management
+and investors benefit from referring to these non-GAAP financial measures in assessing our performance and when
+planning, forecasting, and analyzing future periods. These non-GAAP financial measures also facilitate management’s
+internal comparisons to our historical performance and liquidity as well as comparisons to our competitors’ operating
+results. We believe these non-GAAP financial measures are useful to investors both because (1) they allow for greater
+transparency with respect to key metrics used by management in its financial and operational decision-making and (2)
+they are used by our institutional investors and the analyst community to help them analyze the health of our business.
+There are a number of limitations related to the use of non-GAAP financial measures. We compensate for these
+limitations by providing specific information regarding the GAAP amounts excluded from these non-GAAP financial
+measures and evaluating these non-GAAP financial measures together with their relevant financial measures in
+accordance with GAAP.
+3
+For more information on these non-GAAP financial measures, please see the sections captioned “Reconciliation from
+GAAP Net Cash Provided by Operating Activities to Non-GAAP Free Cash Flow” and “Reconciliation from GAAP
+Revenues to Non-GAAP Constant Currency Revenues and GAAP Percentage Change in Revenues to Non-GAAP
+Percentage Change in Constant Currency Revenues” included at the end of this release.
+Contact
+Investor relations Media
+investor-relations@abc.xyz press@abc.xyz
+
