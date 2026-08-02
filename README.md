@@ -54,9 +54,7 @@ you › how much did Google Cloud revenue grow between Q1 and Q3 2025?
                                            └──────────────────────────┘
 ```
 
-The system prompt grounds the agent. Factual questions must be answered from
-tool output only, and it is told to say "I don't have that information" rather
-than fall back on the model's own knowledge.
+The system prompt grounds the agent. 
 
 **Retrieval.** Documents are split into 1000-character chunks with 150
 characters of overlap, embedded with `gemini-embedding-001` at 768 dimensions,
@@ -118,14 +116,14 @@ Inside a chat: `/help` `/sources` `/tools` `/formats` `/clear` `/exit`.
 ## Using your own documents
 
 Point `--docs` at any folder. It is scanned recursively, and hidden files and
-junk directories such as `.git`, `node_modules` and virtualenvs are skipped.
+junk directories such as `.git`, `node_modules` and virtualenvs are automatically skipped.
 
 ```bash
 uv run agentic-rag --docs ~/work/handbook ingest
 uv run agentic-rag --docs ~/work/handbook chat
 ```
 
-To keep several corpora side by side, give each one its own index:
+To keep several data sources side by side, give each one its own index:
 
 ```bash
 uv run agentic-rag --docs ~/work/handbook --data ~/.agentic-rag/handbook ingest
